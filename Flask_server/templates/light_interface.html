@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="{{url_for('static', filename='js/light_interface.js')}}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/light_interface.css') }}" />
+    <title>lights interface</title>
+</head>
+<body>
+<div id="mainbox">
+    <img id="power" class="clickable" alt="loading">
+    <div id="actions">
+        <label class="switch">
+            <input type="checkbox" id="proxCheck">
+            <div class="slider round clickable red" id="prox"></div>
+        </label>
+        <label class="switch">
+            <input type="checkbox" id="lightCheck">
+            <div class="slider round clickable red" id="light"></div>
+        </label>
+    </div>
+</div>
+</body>
+</html>
