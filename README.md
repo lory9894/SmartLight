@@ -4,7 +4,7 @@ Connect the relay in the circuit you want to control or, if you are brave like m
 
 # Functionality
 The base idea is to have a smart-light, but actually smart.
-This project doesn't rely on vocal commands, internet connection or convoluted cloud based infrastracture. It's completly modular and every single part of it can function without the others, if stripped to the bare bones it can still function as a normal switch activated light.
+This project doesn't rely on vocal commands, internet connection or convoluted cloud based infrastructure. It's completly modular and every single part of it can function without the others, if stripped to the bare bones it can still function as a normal switch activated light.
 Modules:
   - Proximity sensor: I used an ultrasonic sensor, HC-SR04, exploiting a peculiarity of ultrasounds. Humans (and clothes) are soft and squishy so they tend to absorb ultrasonic wawes, if a soft material is placed in front of this sensor no wawe returns and the sensor triggers. Using an ultrasonic sensor istead of (for example) a laser tripwire makes possible to distinguish between a person and an inanimate object. If I enter the room the sensor triggers, if I close the door the sensor doesn't.
   - Photoresistor: I used a LDR 5516, but every photoresistor should do the job if correctly configured. This module is a must have if used in combination with the proximity sensor, so if there is already enough lihgt in the room the smart light doesn't turn on. Another functionality implemented is the "Absent-minded" functionality: if the light is on for more than 600 seconds while there is enough light in the room it means that i forgot to turn it off, so it does it for me.
