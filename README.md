@@ -28,3 +28,4 @@ compile and load the code from your preferred Arduino IDE
 
 ## Web interface ##
 This interface is runned on another device. I choose a RaspberryPi because I already had a Flask server running on it
+The esp uses standard json to return data about its status
